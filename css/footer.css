@@ -1,0 +1,10 @@
+.footer{
+
+    border-radius: 8px;
+    border: 2px solid #FCFCFC;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    margin-top: auto;
+    background: #CC3BF5;
+}

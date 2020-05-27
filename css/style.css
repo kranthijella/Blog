@@ -1,0 +1,33 @@
+@import "section.css";
+@import "footer.css";
+header{
+    color: #CC3BF5;
+    font-family: sans-serif;
+    background: #FCFCFC;
+    padding: 20px;
+    display: flex;
+    flex:10%;
+    flex-direction: column;
+}
+.title{
+
+    font-size: 18px;
+    display: block;
+    margin-left: 10px;
+}
+#navigation{
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+}
+.link{
+    flex: 1 1 auto;
+    font-size: 24px;
+    margin-top: 10px;
+    color: dimgray;
+    text-decoration: none;
+}
+.link:hover{
+    color:midnightblue;
+}

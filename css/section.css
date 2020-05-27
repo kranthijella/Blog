@@ -1,0 +1,79 @@
+@import "style.css";
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    flex: 90%;
+}
+.root{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+.middle{
+    flex-direction: row;
+    display: flex;
+}
+.pages{
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    grid-auto-rows: auto;
+    display: grid;
+    gap:10px;
+}
+.article{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment{
+    flex: 1 250px;
+}
+.profile{
+    display: flex;
+}
+.article > img{
+   height: 100%;
+    object-fit: cover;
+    min-height: 0px;
+}
+
+.foot{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+ ul li{
+    margin-right: 30px;
+}
+#copyright {
+    color: #FCFCFC;
+    padding-right: 5px;
+    align-self: center;
+    margin-left: auto;
+}
+@-moz-document url-prefix() {
+    @media screen and (max-width:800px) {
+        /* insert code here*/
+        .title{
+            color: black;
+        }
+       .middle{
+           flex-direction: column;
+       }
+       #head{
+            justify-content: space-between;
+           flex-direction: row;
+       }
+       #navigation{
+           margin: 20px;
+           align-content: center;
+           flex: 1;
+           border: 1px solid red;
+           flex-direction: row;
+       }
+
+    }
+    }
